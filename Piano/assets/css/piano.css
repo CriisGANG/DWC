@@ -1,4 +1,21 @@
-/*css tret de https://github.com/LFeh/piano/blob/master/dev/assets/css/style.css*/
+/* Estils generals del cos */
+body {
+    display: flex; /* Utilitzant Flexbox */
+    justify-content: center; /* Centrar horitzontalment */
+    align-items: center; /* Centrar verticalment */
+    height: 100vh; /* Altura completa de la finestra del navegador */
+    margin: 0; /* Eliminar marges predeterminats del cos */
+    background-color: #f0f0f0; /* Color de fons opcional */
+}
+
+/* Contenidor principal */
+.container {
+    display: flex; /* Apilar el piano i la secció de cerca verticalment */
+    flex-direction: column; /* Col·locar els elements en columna */
+    align-items: center; /* Centrar horitzontalment */
+}
+
+/* Existing CSS for piano keys */
 .piano {
     background: -webkit-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
     background: -moz-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
@@ -9,14 +26,19 @@
     padding: 0 1% 3%;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 30px; /* Separació entre el piano i la secció de cerca */
+    overflow: hidden; /* Assegura que el piano sigui totalment visible */
+    max-height: 400px; /* Control de l'alçada màxima del piano */
+    width: 100%; /* Ample del piano */
+    max-width: 1000px; /* Ample màxim del piano */
 }
 
 .key {
     display: inline-block;
     position: relative;
-    margin: 0 2px;
-    width: 6%;
-    max-width: 85px;
+    margin: 0 1px; /* Ajustar marges per evitar que s'aplasti */
+    width: 10%; /* Augmentar amplada de les tecles */
+    max-width: 100px; /* Amplada màxima de les tecles */
 }
 
 .key:active .black-key,
@@ -31,7 +53,7 @@
     background: linear-gradient(-30deg, #f8f8f8, #ffffff);
     box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px 0px 0px #ffffff, 0 4px 3px rgba(0, 0, 0, 0.7), inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px -1px 15px rgba(0, 0, 0, 0.5), -3px 4px 6px rgba(0, 0, 0, 0.5);
     display: block;
-    height: 300px;
+    height: 200px; /* Alçada ajustada per una millor visibilitat */
 }
 
 .key .white-key:active,
@@ -39,7 +61,7 @@
     box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px 0px 0px #ffffff, 0 4px 3px rgba(0, 0, 0, 0.7), inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px -1px 15px #000000, -3px 4px 6px rgba(0, 0, 0, 0.5);
     position: relative;
     top: -5px;
-    height: 295px;
+    height: 195px; /* Ajustat per coincidir */
 }
 
 .key .black-key {
@@ -52,7 +74,7 @@
     border-width: 1px 3px 8px;
     border-style: solid;
     border-color: #666 #222 #111 #555;
-    height: 160px;
+    height: 120px; /* Alçada ajustada */
     position: absolute;
     top: 0px;
     right: -40%;
@@ -64,4 +86,80 @@
 .key .black-key.active {
     border-bottom-width: 3px;
     top: 0;
+}
+
+/* Search section styles */
+.search-section {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+input#searchInput {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 60%;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #c9302c;
+}
+
+/* Result styles */
+.results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-item p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.lyrics-link {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.lyrics-link:hover {
+    text-decoration: underline;
+}
+
+.play-btn {
+    background-color: #5cb85c;
+}
+
+.play-btn:hover {
+    background-color: #4cae4c;
 }
