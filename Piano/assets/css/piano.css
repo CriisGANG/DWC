@@ -1,12 +1,18 @@
 /* Estils generals del cos */
+/* Estilo para la imagen de fondo */
 body {
+    background-image: url('/assets/img/background/background11.jpg'); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     display: flex; /* Utilitzant Flexbox */
     justify-content: center; /* Centrar horitzontalment */
     align-items: center; /* Centrar verticalment */
     height: 100vh; /* Altura completa de la finestra del navegador */
     margin: 0; /* Eliminar marges predeterminats del cos */
-    background-color: #f0f0f0; /* Color de fons opcional */
+    color: white; /* Cambia el color del texto si es necesario */
 }
+
 
 /* Contenidor principal */
 .container {
@@ -29,8 +35,8 @@ body {
     margin-bottom: 30px; /* Separació entre el piano i la secció de cerca */
     overflow: hidden; /* Assegura que el piano sigui totalment visible */
     max-height: 400px; /* Control de l'alçada màxima del piano */
-    width: 100%; /* Ample del piano */
-    max-width: 1000px; /* Ample màxim del piano */
+    width: 200%; /* Aumenta el ancho del piano */
+    max-width: none; /* Permite que el piano se expanda sin límite */
 }
 
 .key {
@@ -53,7 +59,7 @@ body {
     background: linear-gradient(-30deg, #f8f8f8, #ffffff);
     box-shadow: inset 0 1px 0px #ffffff, inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px 0px 0px #ffffff, 0 4px 3px rgba(0, 0, 0, 0.7), inset 0 -1px 0px #ffffff, inset 1px 0px 0px #ffffff, inset -1px -1px 15px rgba(0, 0, 0, 0.5), -3px 4px 6px rgba(0, 0, 0, 0.5);
     display: block;
-    height: 200px; /* Alçada ajustada per una millor visibilitat */
+    height: 250px; /* Aumenta la altura de las teclas blancas */
 }
 
 .key .white-key:active,
@@ -74,7 +80,7 @@ body {
     border-width: 1px 3px 8px;
     border-style: solid;
     border-color: #666 #222 #111 #555;
-    height: 120px; /* Alçada ajustada */
+    height: 150px; /* Aumenta la altura de las teclas negras */
     position: absolute;
     top: 0px;
     right: -40%;
@@ -96,6 +102,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200%; /* Aumenta el ancho de la sección */ 
+
 }
 
 h2, h3 {
@@ -162,4 +170,12 @@ input#searchInput {
 
 .play-btn:hover {
     background-color: #4cae4c;
+}
+/* Estilo para el título */
+.title {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    color: white; /* Cambia el color del texto si es necesario */
+    font-family: 'Arial', sans-serif; /* Fuente del título */
+    font-size: 24px; /* Tamaño de la fuente del título */
 }
