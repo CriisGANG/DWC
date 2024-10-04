@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'bianca'; /* Cambia esto al nombre que desees */
+    src: url('/assets/Bianca\ Lovely.otf') format('truetype'); /* Cambia esto al nombre del archivo */
+}
 /* Estils generals del cos */
 /* Estilo para la imagen de fondo */
 body {
@@ -10,7 +14,7 @@ body {
     align-items: center; /* Centrar verticalment */
     height: 100vh; /* Altura completa de la finestra del navegador */
     margin: 0; /* Eliminar marges predeterminats del cos */
-    color: white; /* Cambia el color del texto si es necesario */
+    color: black; /* Cambia el color del texto si es necesario */
 }
 
 
@@ -173,9 +177,9 @@ input#searchInput {
 }
 /* Estilo para el título */
 .title {
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 20px; /* Espacio inferior */
-    color: white; /* Cambia el color del texto si es necesario */
-    font-family: 'Arial', sans-serif; /* Fuente del título */
-    font-size: 24px; /* Tamaño de la fuente del título */
+    font-family: 'bianca', sans-serif; /* Añade tu fuente aquí */
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: black; 
+    font-size: 32px; 
 }
