@@ -177,7 +177,7 @@ input#searchInput {
 }
 /* Estilo para el título */
 .title {
-    font-family: 'bianca', sans-serif; /* Añade tu fuente aquí */
+    font-family: 'bianca', sans-serif; 
     text-align: center; 
     margin-bottom: 20px; 
     color: black; 

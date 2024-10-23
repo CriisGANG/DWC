@@ -107,3 +107,4 @@ searchInput.addEventListener('input', () => {
 addCerca("DO", "normal");
 addCerca("RE", "normal");
 cercador(); // Debería mostrar ["La Balanguera", "Happy Birthday"]
+
