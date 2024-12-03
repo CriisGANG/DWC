@@ -1,0 +1,110 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabecera principal */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #b71c1c;
+}
+
+/* Barra de acción (Nova partitura) */
+.action-bar {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -1px; /* Asegura continuidad con la cabecera */
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    font-size: 1rem;
+}
+
+thead {
+    background-color: #d32f2f;
+    color: white;
+}
+
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Botones */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+button.edit {
+    color: #1976d2;
+}
+
+button.edit:hover {
+    text-decoration: underline;
+}
+
+button.delete {
+    color: #d32f2f;
+}
+
+button.delete:hover {
+    text-decoration: underline;
+}
